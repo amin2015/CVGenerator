@@ -37,7 +37,7 @@ If you need a database, modify the .env file like this example:
 
 This docker-compose provides you :
 
-- PHP-8.0.13-cli (Debian)
+- PHP-8.1 (Debian)
     - Composer
     - Symfony CLI
     - and some other php extentions
