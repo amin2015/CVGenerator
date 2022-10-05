@@ -1,10 +1,5 @@
 
-# Symfony 6 + PHP 8.1 with Docker
-
-**ONLY for DEV, not for production**
-
-A very simple Docker-compose to discover Symfony 6 with PHP 8.1 in 5 minutes
-## Run Locally
+# Symfony 6 + PHP 8.1 
 
 Clone the project
 
