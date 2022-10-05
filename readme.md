@@ -1,15 +1,15 @@
 
-# Symfony 6 + PHP 8.0.13 with Docker
+# Symfony 6 + PHP 8.1 with Docker
 
 **ONLY for DEV, not for production**
 
-A very simple Docker-compose to discover Symfony 6 with PHP 8.0.13 in 5 minutes
+A very simple Docker-compose to discover Symfony 6 with PHP 8.1 in 5 minutes
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git@github.com:yoanbernabeu/symfony6-php8-in-docker-compose.git
+  git remote add origin git@github.com:amin2015/CVGenerator.git
 ```
 
 Run the docker-compose
@@ -19,28 +19,13 @@ Run the docker-compose
   docker-compose up -d
 ```
 
-Log into the PHP container
+Create Host
 
 ```bash
-  docker exec -it php8-sf6 bash
+ php -S localhost:8080 -t public
 ```
 
-Create your Symfony application and launch the internal server
-
-```bash
-  symfony new new-project --full
-  cd new-project
-  symfony serve -d
-```
-
-Create an account (identical to your local session)
-
-```bash
-  adduser username
-  chown username:username -R .
-```
-
-*Your application is available at http://127.0.0.1:9000*
+*Your application is available at http://localhost:8080*
 
 If you need a database, modify the .env file like this example:
 
@@ -68,6 +53,3 @@ Out of the box, this docker-compose is designed for a Linux operating system, pr
 - Linux (Ubuntu 20.04 or other)
 - Docker
 - Docker-compose
-## Author
-
-- [@yoanbernabeu](https://github.com/yoanbernabeu)
